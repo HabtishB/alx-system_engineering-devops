@@ -1,2 +1,2 @@
-source script
+#!/bin/bash 
 cd /home
