@@ -5,19 +5,20 @@
 
 HOUR=0
 MINUTE=-1
-while [ $HOUR -lt 13 ]; do
+while [ $HOUR -lt 14 ]; do
     ((MINUTE++))
     if [ $MINUTE -eq 0 ]
     then
 	echo "HOUR: $HOUR"
-    elif [ $MINUTE -lt 60 ]
+    elif [ $MINUTE -ne 60 ]
     then
 	echo $MINUTE
-    elif [ $MINUTE -eq 60 ]
-    then
-	((HOUR++))
-        echo "HOUR: $HOUR"
     else
+	if [ $HOUR -ne 13 ]
+        then
+	    echo "HOUR: $HOUR"
+	fi
+	((HOUR++))
         MINUTE=0    
     fi
 done
