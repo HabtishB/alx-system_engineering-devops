@@ -5,7 +5,7 @@
 
 HOUR=0
 MINUTE=-1
-while [ $HOUR -lt 14 ]; do
+while [ $HOUR -lt 13 ]; do
     ((MINUTE++))
     if [ $MINUTE -eq 0 ]
     then
@@ -14,9 +14,9 @@ while [ $HOUR -lt 14 ]; do
     then
 	echo $MINUTE
     else
-	if [ $HOUR -ne 13 ]
+	if [ $HOUR -ne 12 ]
         then
-	    echo "HOUR: $HOUR"
+	    echo "HOUR: $((HOUR+1))"
 	fi
 	((HOUR++))
         MINUTE=0    
