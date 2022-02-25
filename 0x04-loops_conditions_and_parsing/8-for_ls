@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script prints the list of names of the files after the first dash
+
+for i in *; do
+    if [ "$i" != "*" ]
+    then
+	echo "$i" | cut -f2 -d "-";
+    fi
+done

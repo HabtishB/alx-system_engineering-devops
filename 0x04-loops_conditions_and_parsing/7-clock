@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script prints "hour" and minutes
+# using the while loop
+
+
+HOUR=0
+MINUTE=-1
+while [ $HOUR -lt 13 ]; do
+    ((MINUTE++))
+    if [ $MINUTE -eq 0 ]
+    then
+	echo "HOUR: $HOUR"
+    elif [ $MINUTE -lt 60 ]
+    then
+	echo $MINUTE
+    elif [ $MINUTE -eq 60 ]
+    then
+	((HOUR++))
+        echo "HOUR: $HOUR"
+    else
+        MINUTE=0    
+    fi
+done
