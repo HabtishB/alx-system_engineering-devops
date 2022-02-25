@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# This script prints "Best School" ten times
-# using the while loop
+# This script prints numbers that range from 1 to 20 
+# and enters some conditions in it.
 
-COUNTER=1
-while [ $COUNTER -le 20 ]; do
-    if [ $COUNTER -eq 5 ]
+COUNTER=0
+while [ $COUNTER -lt 20 ]; do
+    if [ $COUNTER -eq 4 ]
     then
 	echo "bad luck from China"
-    elif [ $COUNTER -eq 10 ]
+    elif [ $COUNTER -eq 9 ]
     then
 	echo "bad luck from Japan"
-    elif [ $COUNTER -eq 18 ]
+    elif [ $COUNTER -eq 17 ]
     then
 	echo "bad luck from Italy"
     else
