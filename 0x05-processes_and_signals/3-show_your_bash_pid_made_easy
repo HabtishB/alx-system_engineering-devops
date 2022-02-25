@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# finds processes with bash, and displays them along with their process name
+
+pgrep -l bash

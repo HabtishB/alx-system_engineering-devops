@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#display branched user oriented format
+ps -e -u --forest -a -x
