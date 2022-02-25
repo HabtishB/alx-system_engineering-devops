@@ -5,7 +5,7 @@
 # otherwise display the number for the numbers between 1 and 100
 
 COUNTER=1
-while [ $COUNTER -lt 100 ]; do
+while [ $COUNTER -le 100 ]; do
     if [ $((COUNTER%3)) -eq 0 ] && [ $((COUNTER%5)) -eq 0 ]
     then
 	echo "FizzBuzz"
