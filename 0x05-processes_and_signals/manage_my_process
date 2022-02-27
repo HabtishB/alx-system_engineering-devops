@@ -2,8 +2,8 @@
 # Writes 'I am alive!' indefinately to the file /tmp/my_process
 
 
-sudo touch /var/run/myscript.pid
-sudo bash -c 'echo $$ > /var/run/myscript.pid'
+sudo touch /tmp/my_process.pid
+sudo bash -c 'echo $$ > /var/run/my_process.pid'
 
 while true; do
     sudo bash -C 'echo "I am alive!" >> /tmp/my_process'
