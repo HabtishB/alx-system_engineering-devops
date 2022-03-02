@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Scans all ports and prints out all
+# UDP and TCP ports that are listening
+
+netstat -tunlp
