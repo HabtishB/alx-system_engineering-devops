@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays all active ip4 ip addresses on the machine it executes
+
+ifconfig | grep -E -o 'inet addr:\S*' | cut -f2 -d ":"
+

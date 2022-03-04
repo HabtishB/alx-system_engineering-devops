@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script changes the localhost address and facebook's
+# address to 127.0.0.2 and 8.8.8.8
+
+cp etc/hosts ~/hosts.new
+printf "127.0.0.2"\tlocalhost\" >~/hosts.new
+printf"8.8.8.8"\tlocalhost\" >>~/hosts.new
+cp -f ~/hosts.new /etc/hosts
