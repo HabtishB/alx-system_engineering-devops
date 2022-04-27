@@ -1,0 +1,1 @@
+This scripts are used to set up NGNIX webserver
