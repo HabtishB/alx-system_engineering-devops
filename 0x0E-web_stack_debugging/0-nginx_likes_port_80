@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Finds out what the problem of the server is - why it is not listening on port 80 and tries to fix it.
+sudo sed -i "s/8080 default_server/80 default_server/g" /etc/nginx/sites-enabled/default
+sudo sed "s/sites-enabled/sites-available/" /etc/nginx/nginx.conf
+sudo service nginx restart
+
